@@ -1,0 +1,14 @@
+package part5;
+
+public class Factory {
+	
+	//Write객체 반환 다형성
+	public static Write getWriteInstance() {
+		return new FreeBoardWrite();
+	}
+	
+	//Board객체 반환 다형성
+	public static Board getBoardInstance() {
+		return new BoardCafe();
+	}
+}

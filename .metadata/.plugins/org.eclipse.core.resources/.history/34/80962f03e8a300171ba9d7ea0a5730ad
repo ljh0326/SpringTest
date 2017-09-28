@@ -1,0 +1,14 @@
+package part3;
+
+public class BoardCafe implements Board{
+	private Wrtie write;
+	
+	public void setWrite(Write write) {
+		this.write = write;
+	}
+
+	@Override
+	public void boardWrite() {
+		write.doWrite();
+	}
+}

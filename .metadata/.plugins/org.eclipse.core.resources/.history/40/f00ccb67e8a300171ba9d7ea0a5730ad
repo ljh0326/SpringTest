@@ -1,0 +1,21 @@
+package part3;
+
+public class FreeBoardWrite implements Write{
+	private String sBoardName;
+	
+	public FreeBoardWrite() {
+		init();
+	}
+	private void init() {
+		this.setsBoardName("Free Board");
+	}
+	
+	public void setsBoardName(String sBoardName) {
+		this.sBoardName = sBoardName;
+	}
+	@Override
+	public void doWrite() {
+		// TODO Auto-generated method stub
+		
+	}
+}

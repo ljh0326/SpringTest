@@ -1,0 +1,28 @@
+package part7;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+//보드를 상속받는다.
+public class BoardCafe implements Board{
+	
+	//write 객체 연결  xml에서 설정한 write가 자동으로 들어간다. 
+	//private Write write = new FreeBoardWrite();랑 똑같은거야 
+	@Autowired	
+	@Qualifier("qnaWrite")
+	private Write write;
+	
+	//write객체를 생성
+	//어노테이션을 면 생성자를 해줄 필요가 없다. 
+	//자바빈즈를 설정해서 어떤 객체를 가져올지 아는거야 
+
+	public void setWrite(Write write) {
+		this.write = write;
+	}
+	
+	//doWrite;
+	@Override
+	public void boardWrite() {
+		write.doWrite();
+	}
+}

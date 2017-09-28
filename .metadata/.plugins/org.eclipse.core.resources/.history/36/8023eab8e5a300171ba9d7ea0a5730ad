@@ -1,0 +1,16 @@
+public class Write{
+	
+	private String sBoardName;
+	
+	public Write() {
+		init();
+	}
+	
+	public void init() {
+		this.setBoardName("Free Board");
+	}
+	
+	public void setBoardName(String sBoardName) {
+		this.sBoardName = sBoardName;
+	}
+}

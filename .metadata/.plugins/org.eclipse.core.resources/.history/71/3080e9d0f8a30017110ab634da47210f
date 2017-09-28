@@ -1,0 +1,19 @@
+package part3;
+
+import part4.Board;
+import part4.BoardCafe;
+import part4.FreeBoardWrite;
+import part4.Write;
+
+public class Factory {
+	
+	//Write객체 반환 다형성
+	public static Write getWriteInstance() {
+		return new FreeBoardWrite();
+	}
+	
+	//Board객체 반환 다형성
+	public static Board getBoardInstance() {
+		return new BoardCafe();
+	}
+}

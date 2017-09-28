@@ -1,0 +1,5 @@
+package part4;
+
+interface Board{
+	public void boardWrite();
+}
