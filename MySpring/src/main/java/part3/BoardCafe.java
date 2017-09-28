@@ -1,9 +1,5 @@
 package part3;
 
-import part4.Board;
-import part4.Factory;
-import part4.Write;
-
 //보드를 상속받는다.
 public class BoardCafe implements Board{
 	//write 객체 연결 

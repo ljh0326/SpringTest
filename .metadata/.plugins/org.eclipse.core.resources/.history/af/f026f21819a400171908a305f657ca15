@@ -1,0 +1,8 @@
+package part11;
+
+import org.springframework.stereotype.Component;
+
+@Component("profiler")
+public class Profiler {
+	
+}
